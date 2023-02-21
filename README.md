@@ -1,36 +1,46 @@
-# Imersão Full Stack & FullCycle - Codelivery
+# Getting Started with Create React App
 
-## Descrição
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Repositório do front-end feito com React.js (Front-end)
+## Available Scripts
 
-**Importante**: A aplicação do Apache Kafka, Golang e Nest.js deve estar rodando primeiro.
+In the project directory, you can run:
 
-## Configurar /etc/hosts
+### `npm start`
 
-A comunicação entre as aplicações se dá de forma direta através da rede da máquina.
-Para isto é necessário configurar um endereços que todos os containers Docker consigam acessar.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Acrescente no seu /etc/hosts (para Windows o caminho é C:\Windows\system32\drivers\etc\hosts):
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-```
-127.0.0.1 host.docker.internal
-```
+### `npm test`
 
-Em todos os sistemas operacionais é necessário abrir o programa para editar o _hosts_ como Administrator da máquina ou root.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Rodar a aplicação
+### `npm run build`
 
-Execute os comandos:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
-docker-compose up
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Acessar http://localhost:3001.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Para Windows
+### `npm run eject`
 
-Lembrar de instalar o WSL2 e Docker. Vejo o vídeo: [https://www.youtube.com/watch?v=usF0rYCcj-E](https://www.youtube.com/watch?v=usF0rYCcj-E)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Siga o guia rápido de instalação: [https://github.com/codeedu/wsl2-docker-quickstart](https://github.com/codeedu/wsl2-docker-quickstart)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
