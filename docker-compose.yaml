@@ -5,6 +5,12 @@ services:
     build: .
     entrypoint: ./.docker/entrypoint.sh
     ports:
-      - 3001:3000
+      - 3001:3001
     volumes:
       - .:/home/node/app
+    networks:
+      - private-network
+
+networks:
+  private-network:
+    external: true
